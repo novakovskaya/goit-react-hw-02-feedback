@@ -1,0 +1,35 @@
+.List {
+  width: 400px;
+  display: flex;
+
+  background-color: #f3f6f9;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: calc(100% / 5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+
+  &:not(:last-child) {
+    border-right: 1px solid #dcdcdc;
+  }
+}
+
+.Text {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #808080;
+}
+
+.Statistic {
+  font-weight: 700;
+  font-size: 16px;
+  color: #122236;
+}
